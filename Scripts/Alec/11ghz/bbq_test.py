@@ -3,7 +3,7 @@
 '''
 #Note: Not sure exactly what imports I need
 import bbq
-from hfss import load_HFSS_project
+from hfss import CalcObject, ureg, load_HFSS_project, get_active_project
 
 ### Design
 project_path = r'C:\Users\rslqulab\Desktop\Alec\\'
@@ -11,10 +11,10 @@ project_name = r'11ghz_alec'
 design_name  = r'11ghz_design1'
 
 ### Junction Parameters
-junc_rects    = ['top_junction','bot_junction']
+junc_rects    = ['top_junc','bot_junc']
 junc_lines    = ['top_junc_line','bot_junc_line']
 junc_LJ_names = ['top_lj','bot_lj']
-junc_lens     = [0.0001]*2
+junc_lens     = [0.0001]
 
 ### Connecting to HFSS and running
 app, desktop, project = load_HFSS_project(project_name, project_path)
