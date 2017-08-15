@@ -5,7 +5,7 @@ Created on Fri Oct 30 14:21:45 2015
 @author: Zaki
 """
 
-root_dir = r'C:\Users\rslqulab\Desktop\zkm\2016_qm_jumps\DiTransmon_Asymetric\\'
+root_dir = r'C:\Users\rslqulab\Desktop\Alec\bbq'
 
 # seams:
 # ref: http://arxiv.org/pdf/1509.01119.pdf
