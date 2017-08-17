@@ -59,7 +59,6 @@ docs/_build/
 /Chris_scripts
 src (do not commit)/
 bbqNumericalDiagonalization - original (pre-Lysander).py
-bbqNumericalDiagonalization.py
 
 *~
 *.swp
