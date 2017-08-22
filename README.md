@@ -55,7 +55,7 @@ Next, let's install qutip. You can choose to use conda intall or pip install, or
     conda install git
     pip install git+https://github.com/qutip/qutip.git
 ```
-
+Note: I have had some trouble running 
 ## pyEPR Project Setup in HFSS
 -------------
 #### Eigenmode Design --- How to set up junctions

@@ -32,6 +32,11 @@ hfss_variables = bba.hfss_variables
 
 ### Testing with things from Zlatko's code
 
-CHI_O1, CHI_ND, PJ, Om, EJ, diff, LJs, SIGN, f0s, f1s, fzpfs, Qs = \
-    eBBQ_Pmj_to_H_params(sol[0], meta_datas[0], cos_trunc = cos_trunc, fock_trunc = fock_trunc)
+reload(bbq)   # so that we can make changes to the class and reload quickly 
+from bbq  import BbqAnalysis
+bba = BbqAnalysis(bbp.data_filename)
+print "Available variations: ", bba.variations
 
+cos_trunc = 10;   fock_trunc  = 7;
+CHI_O1, CHI_ND, PJ, Om, EJ, diff, LJs, SIGN, f0s, f1s, fzpfs, Qs, varz = \
+    bba.analyze_variation(variation = '0', cos_trunc = cos_trunc,   fock_trunc  = fock_trunc)
